@@ -63,7 +63,7 @@ int ssh_valid(char *ciphertext, struct fmt_main *self)
 		       goto err;
 	}
 
-	if (cipher < 0 || cipher > 6) {
+	if (cipher < 0 || cipher > 7) {
 		fprintf(stderr, "[%s] cipher value of %d is not supported!\n",
 		        self->params.label, cipher);
 		goto err;
